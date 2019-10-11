@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="view">
+<div class="calculator">
+    <form name="myForm">
+    <h1>Calculator</h1>
+    <table cellspacing="20" cellpadding="0" border="0">
+        <tr>
+        <td colspan="4">
+        <input value="" name="textView" id="id" type="text" disabled>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+        <input value="C" class="primary" onclick="return input(false)"  name="bc" type="button">
+        </td>
+
+        <td>
+            <input value="+" class="sec" onclick="return input(value)"  name="bmp" type="button">
+        </td>
+
+        <td>
+            <input value="-" class="sec" onclick="return input(value)"  name="bmp" type="button">
+        </td>
+
+        <td>
+            <input value="&lt" class="primary" onclick="bsp()"  name="bc" type="button">
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+            <input value="7" class="sec" onclick="return input(value)"  name="b7" type="button">
+        </td>
+
+        <td>
+            <input value="8" class="sec" onclick="return input(value)"  name="b8" type="button">
+        </td>
+
+        <td>
+            <input value="9" class="sec" onclick="return input(value)"  name="b9" type="button">
+        </td>
+
+        <td>
+            <input value="*" class="sec" onclick="return input(value)"  name="bp" type="button">
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+            <input value="4" class="sec" onclick="return input(value)"  name="b4" type="button">
+        </td>
+
+        <td>
+            <input value="5" class="sec" onclick="return input(value)"  name="b5" type="button">
+        </td>
+
+        <td>
+            <input value="6" class="sec" onclick="return input(value)"  name="b6" type="button">
+        </td>
+
+        <td>
+            <input value="/" class="sec" onclick="return input(value)"  name="bm" type="button">
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+            <input value="1" class="sec" onclick="return input(value)"  name="b1" type="button">
+        </td>
+    
+        <td>
+            <input value="2" class="sec" onclick="return input(value)"  name="b2" type="button">
+        </td>
+    
+        <td>
+            <input value="3" class="sec" onclick="return input(value)"  name="b3" type="button">
+        </td>
+    
+        <td rowspan=2>
+            <input value="=" class="primary" style="height: 107px" onclick="return output()"  name="eq" type="button">
+        </td>
+        </tr>
+
+        <tr>
+        <td colspan=2>
+            <input value="0" class="sec" onclick="return input(value)"  name="b0" type="button">
+        </td>
+
+        <td>
+            <input value="." class="sec" onclick="return input(value)"  name="bd" type="button">
+        </td>
+        </tr>
+
+    </table>
+    </form>
+    <script src="script.js"></script>
+</div>
+</div>
+</body>
+</html>
