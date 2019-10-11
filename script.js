@@ -1,4 +1,4 @@
-alert('Thanks For Visit');
+alert('Welcome to Calculator');
 
 function input(e)
 {
